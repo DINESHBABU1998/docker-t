@@ -6,26 +6,26 @@ app.get('/',(req,res)=>{
     res.json([
         {
             "id":"1",
-            "name":"Happy Soni"
+            "name":"Dinesh Babu"
         },
         {
             "id":"2",
-            "name":"Gopal"
+            "name":"Sasikumar"
         },
         {
             "id":"3",
-            "name":"Ayush"
+            "name":"Gopinath"
         },
         {
             "id":"4",
-            "name":"Aman"
+            "name":"Sudharsan"
         },
         {
             "id":"5",
-            "name":"Utkarsh"
+            "name":"Dhamu"
         },
     ])
 })
 app.listen(4000,()=>{
-    console.log("listning from port 4000");
+    console.log("Hello the node application is running successfully");
 })
