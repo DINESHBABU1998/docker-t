@@ -1,6 +1,7 @@
 const express=require('express')
 const cors= require('cors')
 const app= express()
+
 app.use(cors())
 app.get('/',(req,res)=>{
     res.json([
@@ -26,6 +27,19 @@ app.get('/',(req,res)=>{
         },
     ])
 })
+app.get('/users',(req,res)=>{
+    res.json([
+        {
+            "id":"1",
+            "name":"Dinesh Babu"
+        },
+        {
+            "id":"2",
+            "name":"Dinesh Babu2"
+        },
+])
+}
+)
 app.listen(4000,()=>{
     console.log("Hello the node application is running successfully");
 })
