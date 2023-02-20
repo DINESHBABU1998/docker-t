@@ -5,11 +5,11 @@ pipeline {
         entityGuid = 'MzY3OTk4NXxBUE18QVBQTElDQVRJT058MTMwMjU5NzI5NQ'
     }
     stages {
-        stage('Check env') {
-            steps {
-                sh 'printenv'
-            }
-        }
+//         stage('Check env') {
+//             steps {
+//                 sh 'printenv'
+//             }
+//         }
         stage('post to NR'){
             steps{
                 script{
