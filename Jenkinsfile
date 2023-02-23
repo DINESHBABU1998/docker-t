@@ -2,7 +2,8 @@ pipeline {
     agent any
 
     environment{
-        entityGuid = 'MzY3OTk4NXxBUE18QVBQTElDQVRJT058MTMwMjU5NzI5NQ'
+        entityGuid = 'MzY3OTk4NXxBUE18QVBQTElDQVRJT058MTMwMjU5NzI5NQ',
+        OTEL_LOGS_EXPORTER="otlp"
     }
     stages {
         // stage('Check env') {
