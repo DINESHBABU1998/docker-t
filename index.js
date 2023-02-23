@@ -1,16 +1,6 @@
 const express=require('express')
 const cors= require('cors')
 const app= express()
-// index.js
-const newrelicFormatter = require('@newrelic/winston-enricher')
-const winston = require('winston')
-const newrelicWinstonFormatter = newrelicFormatter(winston)
-
-
-format: winston.format.combine(
-    winston.format.label({label: 'test'}),
-    newrelicWinstonFormatter()
-  )
 
 app.use(cors())
 app.get('/',(req,res)=>{
